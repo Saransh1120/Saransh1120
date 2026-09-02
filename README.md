@@ -23,9 +23,9 @@ Right now I'm doing DSA in C++ every day and pushing whatever I solve the same
 day. Slowly moving into full-stack web work (TypeScript, React, Node) since
 that's where I want to end up. My two main projects are Mohar and RespiGuard.
 
-I've also done IoT work with sensors and microcontrollers, and a drone workshop
-where I learnt how the frame, motors, flight controller and radio link fit
-together.
+I've also done IoT work with sensors and microcontrollers, and a three day drone
+workshop at Sharda University where we assembled a quadcopter from parts and
+took it up to basic autonomy.
 
 <br>
 
@@ -86,18 +86,31 @@ monitor that reports tamper and environment data from inside the strongroom.
   <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black" />
 </p>
 
-### Gas leak detector
+### LPG gas detector
 
-An IoT build using an MQ-2 sensor. It watches for LPG and smoke in the air and
-raises an alarm the moment the reading crosses the safe level, so a leak gets
-caught before anyone smells it. Small project, but it was the one that got me
-into sensors properly.
+A college IoT project. An MQ-2 sensor sits watching the air and feeds an analog
+reading into an Arduino Uno. Below the threshold nothing happens. The moment LPG
+concentration crosses it, the buzzer goes off and the LEDs light up, so a leak in
+a kitchen gets caught long before it turns into a fire.
+
+Nothing fancy in it, but it's the project that got me comfortable with reading a
+sensor, picking a sane threshold and driving outputs off it.
+
+Arduino Uno, MQ-2 module, piezo buzzer, LED indicators, 9V supply with a toggle
+switch.
 
 <p>
+  <img src="https://img.shields.io/badge/Arduino%20Uno-00979D?style=flat-square&logo=arduino&logoColor=white" />
   <img src="https://img.shields.io/badge/MQ--2%20sensor-555555?style=flat-square" />
-  <img src="https://img.shields.io/badge/IoT-1BA0D7?style=flat-square" />
-  <img src="https://img.shields.io/badge/Arduino-00979D?style=flat-square&logo=arduino&logoColor=white" />
+  <img src="https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white" />
 </p>
+
+### Drone workshop
+
+Three days at Sharda University with the AI and Robotics Club, "From Assembly to
+Autonomy". We built a quadcopter from the frame up: motors, ESCs, flight
+controller, radio link, props, then calibration and flight. Seeing how much of it
+is tuning rather than building was the useful part.
 
 ### c--dsapw
 
