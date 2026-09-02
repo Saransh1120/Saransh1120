@@ -1,118 +1,85 @@
-<h1 align="center">Hi, I'm Saransh 👋</h1>
+## Hi, I'm Saransh
 
-<p align="center">
-  Engineering student who builds systems end to end — from the sensor on the board to the dashboard in the browser.
-</p>
+Engineering student. I mostly build things that sit between hardware and software,
+because that's where the interesting bugs are.
 
-<p align="center">
-  <a href="mailto:codeaxis048@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
-  <img src="https://komarev.com/ghpvc/?username=Saransh1120&style=for-the-badge&color=blue" />
-</p>
+Right now I'm doing DSA in C++ every day and pushing whatever I solve the same
+day. Slowly moving into full-stack web work (TypeScript, React, Node) since
+that's where I want to end up. On the hardware side I write ESP32 firmware, wire
+up I2C and I2S sensors, and solder on perfboard when I don't have a PCB.
 
----
+Mail: sargarbhit19@gmail.com
 
-### About me
+<br>
 
-- 🎯 Grinding **DSA in C++** — one commit a day, no skipped days
-- 🌱 Moving toward **full-stack web development** (TypeScript, React, Node)
-- 🔧 I build real hardware too: ESP32 firmware, I2C sensor stacks, custom PCBs on perfboard
-- ⚡ I like problems where the software has to survive contact with the physical world
+## Projects
 
----
+### RespiGuard
 
-## 🚀 Featured projects
+A chest-worn asthma monitor. Most wearables alert you the second a number crosses
+some textbook threshold, which is useless because everyone's normal is different.
+RespiGuard spends its first few days learning your own baseline for SpO2,
+breathing rate and heart rate, and only alerts when those drift away from your
+normal *and* a wheeze classifier is firing at the same time.
 
-### 🫁 RespiGuard — a chest-worn asthma early-warning monitor
+The bit I like most is the exertion veto. If the IMU says you're moving hard and
+there's no wheeze in the audio, the score gets pushed back down. Climbing stairs
+shouldn't look like an asthma attack, and on most devices it does.
 
-Most wearables scream at you the moment a number crosses a textbook threshold.
-RespiGuard doesn't. It spends its first days **learning your own baseline** for
-SpO₂, breathing rate and heart rate, and only raises an alert when those drift
-away from *your* normal **while a wheeze classifier is firing at the same time**.
+Built on an ESP32-S3 with a MAX30102 pulse oximeter, an INMP441 mic, a BMI270
+IMU, a BME680, and a small OLED. Detection is a weighted deviation score across
+four signals, going OK to WATCH to ALERT with a hold so the screen doesn't
+flicker. The wheeze model trains on the ICBHI 2017 respiratory sound database.
 
-The part I'm proudest of is the **exertion veto**: if the IMU says you're moving
-hard and there's no wheeze in the audio, the score is pushed back down. Climbing
-stairs should not look like an asthma attack, and on most devices it does.
+Logic is proven in simulation and the self-test firmware is written. The board is
+still being hand-soldered, so nothing has run on real hardware yet.
 
-- **Hardware:** ESP32-S3 · MAX30102 pulse oximeter · INMP441 I2S mic · BMI270 IMU · BME680 · SSD1306 OLED · Li-Po with buck-boost rail
-- **Detection:** weighted deviation scoring across four signals, OK → WATCH → ALERT with a hold window so the display doesn't flicker
-- **ML:** wheeze classifier trained on the ICBHI 2017 Respiratory Sound Database (920 recordings, 126 patients)
-- **Status:** logic proven in a Wokwi simulation, hardware self-test firmware written, board being hand-soldered
+`C++` `Arduino` `ESP32-S3` `Python`
 
-`C++` `Arduino` `ESP32-S3` `I2C / I2S` `Python` `Signal processing`
+<br>
 
----
+### Mohar
 
-### 🔐 Mohar — sealed custody chain for examination papers
+Exam paper leaks in India: 148 cases since 2015, one conviction. That gap isn't
+really a detection problem, it's an evidence problem. Nobody can prove who
+touched the paper and when.
 
-India has had **148 exam-paper leak cases since 2015 and one conviction.** That
-gap is not a detection problem, it's an *evidentiary* one — nobody can prove who
-touched the paper and when. Mohar is my attempt at the boring infrastructure
-that closes it.
+Mohar is a custody chain for exam papers. Three things it tries to do: cut the
+window where a paper exists in readable form from around 240 hours to under one,
+make any leak traceable back to a centre and ideally a seat within minutes of an
+image showing up, and produce a custody record that would actually hold up in
+court.
 
-Three goals, and I deliberately refused a fourth:
+What it does not do is claim leaks can be stopped completely. A human has to read
+the paper eventually. So the goal is to shrink and instrument those moments
+instead of promising something impossible.
 
-1. Shrink the **exposure window** — how long a paper exists in readable form — from roughly 240 hours down to under one.
-2. Make every leak **attributable** to a centre, and where possible a single seat, within minutes of an image surfacing online.
-3. Produce a **court-admissible** custody record, not just an internal log.
+Backend is TypeScript, Fastify and Postgres with a hash-chained append-only
+ledger. On top of that there's a control room dashboard, a public verify portal,
+a centre client and an Android field app. There's also ESP32 firmware for a room
+monitor that reports tamper and environment data from inside the strongroom.
 
-**Non-goal: pretending leaks can be eliminated.** A human has to read the paper
-at some point. Mohar shrinks and instruments those points instead of promising
-the impossible — that honesty is a design feature, not a weakness.
+`TypeScript` `Fastify` `PostgreSQL` `React` `ESP32`
 
-- **Backend:** TypeScript · Fastify · PostgreSQL, with a hash-chained append-only ledger
-- **Frontend:** control-room dashboard, public verify portal, centre client, Android field app
-- **Hardware:** ESP32 room-monitor firmware — tamper and environment telemetry from inside the strongroom
-- **Structure:** pnpm monorepo — `services/` `apps/` `packages/` `firmware/` `infra/`
+<br>
 
-`TypeScript` `Fastify` `PostgreSQL` `React` `Cryptography` `ESP32` `Monorepo`
+### c--dsapw
 
----
-
-### 📘 c--dsapw — Data structures & algorithms in C++
-
-My daily practice log. Conditionals, loops, patterns, and every DSA topic as I
-work through it — committed the same day I solve it. Not polished, deliberately:
-it's a record of the reps, not a portfolio piece.
+My daily C++ practice. Conditionals, loops, patterns, and whatever DSA topic I'm
+on. It's messy on purpose. It's a log of the reps, not a portfolio piece.
 
 `C++`
 
----
+<br>
 
-## 🛠️ Tech I work with
+## Stuff I use
 
-**Languages**
+C++, Java, TypeScript, JavaScript, Python. React, Node, Postgres on the web side.
+Arduino and ESP-IDF for firmware. Git and VS Code for everything else.
 
-![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-
-**Frameworks & tools**
-
-![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
-![Arduino](https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white)
-![Espressif](https://img.shields.io/badge/ESP32-E7352C?style=for-the-badge&logo=espressif&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)
-
----
-
-## 📊 GitHub stats
+<br>
 
 <p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=Saransh1120&show_icons=true&theme=tokyonight&hide_border=true" />
-  <img height="165" src="https://github-readme-streak-stats.herokuapp.com/?user=Saransh1120&theme=tokyonight&hide_border=true" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Saransh1120&layout=compact&theme=tokyonight&hide_border=true" />
-</p>
-
----
-
-<p align="center">
-  <i>Consistency beats intensity. Show up, commit, repeat.</i>
+  <img height="160" src="https://github-readme-stats.vercel.app/api?username=Saransh1120&show_icons=true&theme=dark&hide_border=true" />
+  <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Saransh1120&layout=compact&theme=dark&hide_border=true" />
 </p>
