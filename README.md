@@ -31,7 +31,7 @@ took it up to basic autonomy.
 
 ## Projects
 
-### RespiGuard
+### [RespiGuard](https://github.com/Saransh1120/respiguard)
 
 A chest-worn asthma monitor. Most wearables alert you the second a number crosses
 some textbook threshold, which is useless because everyone's normal is different.
@@ -58,7 +58,7 @@ still being hand-soldered, so nothing has run on real hardware yet.
   <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
 </p>
 
-### Mohar
+### [Mohar](https://github.com/Saransh1120/mohar)
 
 Exam paper leaks in India: 148 cases since 2015, one conviction. That gap isn't
 really a detection problem, it's an evidence problem. Nobody can prove who
@@ -112,7 +112,7 @@ Autonomy". We built a quadcopter from the frame up: motors, ESCs, flight
 controller, radio link, props, then calibration and flight. Seeing how much of it
 is tuning rather than building was the useful part.
 
-### c--dsapw
+### [c--dsapw](https://github.com/Saransh1120/c--dsapw)
 
 My daily C++ practice. Conditionals, loops, patterns, and whatever DSA topic I'm
 on. It's messy on purpose. It's a log of the reps, not a portfolio piece.
