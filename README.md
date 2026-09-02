@@ -1,4 +1,20 @@
-## Hi, I'm Saransh
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=200&section=header&text=Saransh&fontSize=70&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=hardware%20%C2%B7%20software%20%C2%B7%20everything%20in%20between&descAlignY=55&descSize=18" />
+
+<p align="center">
+  <a href="https://github.com/Saransh1120">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&duration=3000&pause=800&color=4EC9B0&center=true&vCenter=true&width=520&lines=C%2B%2B+and+DSA%2C+every+single+day;ESP32+firmware+that+sometimes+works;Learning+full-stack%2C+one+bug+at+a+time" />
+  </a>
+</p>
+
+<p align="center">
+  <a href="mailto:sargarbhit19@gmail.com"><img src="https://img.shields.io/badge/GMAIL-c14438?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+  <a href="https://github.com/Saransh1120?tab=repositories"><img src="https://img.shields.io/badge/PROJECTS-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
+  <img src="https://komarev.com/ghpvc/?username=Saransh1120&style=for-the-badge&color=2c5364&label=VISITORS" />
+</p>
+
+<br>
+
+## About
 
 Engineering student. I mostly build things that sit between hardware and software,
 because that's where the interesting bugs are.
@@ -7,8 +23,6 @@ Right now I'm doing DSA in C++ every day and pushing whatever I solve the same
 day. Slowly moving into full-stack web work (TypeScript, React, Node) since
 that's where I want to end up. On the hardware side I write ESP32 firmware, wire
 up I2C and I2S sensors, and solder on perfboard when I don't have a PCB.
-
-Mail: sargarbhit19@gmail.com
 
 <br>
 
@@ -34,9 +48,12 @@ flicker. The wheeze model trains on the ICBHI 2017 respiratory sound database.
 Logic is proven in simulation and the self-test firmware is written. The board is
 still being hand-soldered, so nothing has run on real hardware yet.
 
-`C++` `Arduino` `ESP32-S3` `Python`
-
-<br>
+<p>
+  <img src="https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white" />
+  <img src="https://img.shields.io/badge/ESP32--S3-E7352C?style=flat-square&logo=espressif&logoColor=white" />
+  <img src="https://img.shields.io/badge/Arduino-00979D?style=flat-square&logo=arduino&logoColor=white" />
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
+</p>
 
 ### Mohar
 
@@ -59,27 +76,49 @@ ledger. On top of that there's a control room dashboard, a public verify portal,
 a centre client and an Android field app. There's also ESP32 firmware for a room
 monitor that reports tamper and environment data from inside the strongroom.
 
-`TypeScript` `Fastify` `PostgreSQL` `React` `ESP32`
-
-<br>
+<p>
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" />
+  <img src="https://img.shields.io/badge/Fastify-000000?style=flat-square&logo=fastify&logoColor=white" />
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" />
+  <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black" />
+</p>
 
 ### c--dsapw
 
 My daily C++ practice. Conditionals, loops, patterns, and whatever DSA topic I'm
 on. It's messy on purpose. It's a log of the reps, not a portfolio piece.
 
-`C++`
-
 <br>
 
 ## Stuff I use
 
-C++, Java, TypeScript, JavaScript, Python. React, Node, Postgres on the web side.
-Arduino and ESP-IDF for firmware. Git and VS Code for everything else.
+<p>
+  <img src="https://skillicons.dev/icons?i=cpp,java,ts,js,python,react,nodejs,postgres,arduino,git,vscode&theme=dark" />
+</p>
 
 <br>
 
+## Stats
+
 <p align="center">
-  <img height="160" src="https://github-readme-stats.vercel.app/api?username=Saransh1120&show_icons=true&theme=dark&hide_border=true" />
-  <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Saransh1120&layout=compact&theme=dark&hide_border=true" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api?username=Saransh1120&show_icons=true&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=4EC9B0&icon_color=4EC9B0" />
+  <img height="165" src="https://github-readme-streak-stats.herokuapp.com/?user=Saransh1120&theme=github-dark-blue&hide_border=true&background=0d1117&ring=4EC9B0&fire=4EC9B0&currStreakLabel=4EC9B0" />
 </p>
+
+<p align="center">
+  <img height="150" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Saransh1120&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=4EC9B0" />
+</p>
+
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=Saransh1120&theme=darkhub&no-frame=true&no-bg=true&column=7&margin-w=10" />
+</p>
+
+<br>
+
+## Contribution snake
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Saransh1120/Saransh1120/output/snake.svg" />
+</p>
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:2c5364,50:203a43,100:0f2027&height=120&section=footer" />
