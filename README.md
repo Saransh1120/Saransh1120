@@ -88,7 +88,7 @@ monitor that reports tamper and environment data from inside the strongroom.
 
 ### LPG gas detector
 
-A college IoT project I led. An MQ-2 sensor sits watching the air and feeds an analog
+My second semester IoT project, which I led. An MQ-2 sensor sits watching the air and feeds an analog
 reading into an Arduino Uno. Below the threshold nothing happens. The moment LPG
 concentration crosses it, the buzzer goes off and the LEDs light up, so a leak in
 a kitchen gets caught long before it turns into a fire.
