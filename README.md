@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://github.com/Saransh1120">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&duration=3000&pause=800&color=4EC9B0&center=true&vCenter=true&width=520&lines=C%2B%2B+and+DSA%2C+every+single+day;ESP32+firmware+that+sometimes+works;Learning+full-stack%2C+one+bug+at+a+time" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&duration=3000&pause=800&color=4EC9B0&center=true&vCenter=true&width=520&lines=C%2B%2B+and+DSA%2C+every+single+day;Building+Mohar+and+RespiGuard;IoT%2C+sensors+and+drones;Learning+full-stack%2C+one+bug+at+a+time" />
   </a>
 </p>
 
@@ -21,8 +21,11 @@ because that's where the interesting bugs are.
 
 Right now I'm doing DSA in C++ every day and pushing whatever I solve the same
 day. Slowly moving into full-stack web work (TypeScript, React, Node) since
-that's where I want to end up. On the hardware side I write ESP32 firmware, wire
-up I2C and I2S sensors, and solder on perfboard when I don't have a PCB.
+that's where I want to end up. My two main projects are Mohar and RespiGuard.
+
+I've also done IoT work with sensors and microcontrollers, and a drone workshop
+where I learnt how the frame, motors, flight controller and radio link fit
+together.
 
 <br>
 
@@ -81,6 +84,19 @@ monitor that reports tamper and environment data from inside the strongroom.
   <img src="https://img.shields.io/badge/Fastify-000000?style=flat-square&logo=fastify&logoColor=white" />
   <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" />
   <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black" />
+</p>
+
+### Gas leak detector
+
+An IoT build using an MQ-2 sensor. It watches for LPG and smoke in the air and
+raises an alarm the moment the reading crosses the safe level, so a leak gets
+caught before anyone smells it. Small project, but it was the one that got me
+into sensors properly.
+
+<p>
+  <img src="https://img.shields.io/badge/MQ--2%20sensor-555555?style=flat-square" />
+  <img src="https://img.shields.io/badge/IoT-1BA0D7?style=flat-square" />
+  <img src="https://img.shields.io/badge/Arduino-00979D?style=flat-square&logo=arduino&logoColor=white" />
 </p>
 
 ### c--dsapw
