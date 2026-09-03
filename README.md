@@ -130,16 +130,21 @@ on. It's messy on purpose. It's a log of the reps, not a portfolio piece.
 ## Stats
 
 <p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=Saransh1120&show_icons=true&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=4EC9B0&icon_color=4EC9B0" />
-  <img height="165" src="https://github-readme-streak-stats.herokuapp.com/?user=Saransh1120&theme=github-dark-blue&hide_border=true&background=0d1117&ring=4EC9B0&fire=4EC9B0&currStreakLabel=4EC9B0" />
+  <img height="180" src="https://github-readme-streak-stats.herokuapp.com/?user=Saransh1120&theme=github-dark-blue&hide_border=true&background=0d1117&ring=4EC9B0&fire=4EC9B0&currStreakLabel=4EC9B0" />
 </p>
 
 <p align="center">
-  <img height="150" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Saransh1120&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=4EC9B0" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Saransh1120&theme=github_dark" />
 </p>
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Saransh1120&theme=darkhub&no-frame=true&no-bg=true&column=7&margin-w=10" />
+  <img height="180" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Saransh1120&theme=github_dark" />
+  <img height="180" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Saransh1120&theme=github_dark" />
+</p>
+
+<p align="center">
+  <img height="180" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Saransh1120&theme=github_dark" />
+  <img height="180" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Saransh1120&theme=github_dark&utcOffset=5.5" />
 </p>
 
 <br>
