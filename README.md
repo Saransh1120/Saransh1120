@@ -119,6 +119,14 @@ on. It's messy on purpose. It's a log of the reps, not a portfolio piece.
 
 <br>
 
+## Competitions
+
+**CodeWars 2026** — Hacker's Unity, 22 to 23 August 2026. My team, Chain Chapter,
+finished in the top 130 out of more than 500 teams.
+[Certificate](certificates/codewars-2026-finalist.pdf)
+
+<br>
+
 ## Stuff I use
 
 <p>
